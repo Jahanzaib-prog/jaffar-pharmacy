@@ -1,0 +1,755 @@
+/* =======================
+        NAVBAR
+======================= */
+
+.navbar{
+    background:#ffffff;
+    padding:18px 0;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+/* Logo */
+
+.logoimg{
+    width:100px;
+    height:auto;
+}
+
+/* Menu */
+
+.navbar-nav{
+    gap:18px;
+}
+
+.nav-link{
+    color:#222 !important;
+    font-size:17px;
+    font-weight:600;
+    position:relative;
+    transition:.3s;
+    padding:8px 10px !important;
+}
+
+/* Hover Line */
+
+.nav-link::after{
+    content:'';
+    position:absolute;
+    left:10px;
+    bottom:0;
+    width:0;
+    height:2px;
+    background:#1dbd73;
+    transition:.3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after{
+    width:70%;
+}
+
+.nav-link:hover{
+    color:#1dbd73 !important;
+}
+
+/* Button */
+
+.reachmebtn{
+    width:150px;
+    height:48px;
+    border:none;
+    border-radius:8px;
+    background:#1dbd73;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.reachmebtn:hover{
+    background:#d5a457;
+}
+
+/* Mobile */
+
+@media (max-width:991px){
+
+    .navbar-collapse{
+        text-align:center;
+        margin-top:20px;
+    }
+
+    .navbar-nav{
+        gap:10px;
+    }
+
+    .reachmebtn{
+        margin-top:20px;
+        width:100%;
+    }
+
+}
+
+
+
+/* ==========================
+        FOOTER
+========================== */
+
+.footer{
+
+    background:#183B6B;
+
+    color:#fff;
+
+    padding:70px 0 25px;
+
+    margin-top:80px;
+
+}
+
+.footer_content{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:60px;
+
+}
+
+.footer_box h2{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+.footer_box h4{
+
+    margin-bottom:20px;
+
+    font-size:22px;
+
+}
+
+.footer_box p{
+
+    color:#d9d9d9;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+.footer_box ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.footer_box ul li{
+
+    margin-bottom:14px;
+
+}
+
+.footer_box ul li a{
+
+    color:#d9d9d9;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer_box ul li a:hover{
+
+    color:#1DBD73;
+
+    padding-left:8px;
+
+}
+
+.social_icons{
+
+    margin-top:25px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.social_icons a{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:#234b82;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:22px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.social_icons a:hover{
+
+    background:#1DBD73;
+
+    transform:translateY(-5px);
+
+}
+
+.footer hr{
+
+    margin:50px 0 20px;
+
+    border-color:rgba(255,255,255,.15);
+
+}
+
+.copyright{
+
+    text-align:center;
+
+}
+
+.copyright p{
+
+    margin:0;
+
+    color:#cfcfcf;
+
+    font-size:15px;
+
+}
+@media(max-width:992px){
+
+.footer_content{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.social_icons{
+
+justify-content:center;
+
+}
+
+}
+
+
+
+/* ==============================
+        MAP SECTION
+============================== */
+
+.map-section{
+
+    padding:100px 0;
+    background:#ffffff;
+
+}
+
+.map-heading{
+
+    text-align:center;
+    margin-bottom:50px;
+
+}
+
+.map-heading span{
+
+    color:#1DBD73;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+
+}
+
+.map-heading h2{
+
+    margin:15px 0;
+    font-size:46px;
+    color:#183B6B;
+    font-weight:700;
+
+}
+
+.map-heading p{
+
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+
+}
+
+.map-container{
+
+    width:100%;
+    height:500px;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 20px 50px rgba(24,59,107,.12);
+
+    border:3px solid #ffffff;
+
+    transition:.35s;
+
+}
+
+.map-container:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 30px 60px rgba(29,189,115,.20);
+
+}
+
+.map-container iframe{
+
+    width:100%;
+    height:100%;
+    border:0;
+
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+.map-heading h2{
+
+font-size:38px;
+
+}
+
+.map-container{
+
+height:420px;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.map-section{
+
+padding:70px 20px;
+
+}
+
+.map-heading h2{
+
+font-size:30px;
+
+}
+
+.map-heading p{
+
+font-size:15px;
+
+}
+
+.map-container{
+
+height:320px;
+border-radius:18px;
+
+}
+
+}
+
+
+
+
+
+
+
+.whatsapp-chat{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    padding:14px 22px;
+
+    border-radius:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    box-shadow:0 15px 35px rgba(37,211,102,.35);
+
+    z-index:9999;
+
+    transition:.3s;
+
+}
+
+.whatsapp-chat i{
+
+    font-size:28px;
+
+}
+
+.whatsapp-chat:hover{
+
+    transform:translateY(-5px);
+
+    color:#fff;
+
+    background:#1DB954;
+
+}
+
+@media(max-width:768px){
+
+.whatsapp-chat span{
+
+display:none;
+
+}
+
+.whatsapp-chat{
+
+padding:16px;
+border-radius:50%;
+
+}
+
+}
+
+
+/* ==============================
+        SCROLL TO TOP BUTTON
+============================== */
+
+.scroll-top{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:105px;   /* Above WhatsApp */
+
+    width:60px;
+
+    height:60px;
+
+    background:#183B6B;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    font-size:24px;
+
+    box-shadow:0 10px 25px rgba(24,59,107,.35);
+
+    z-index:9999;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(20px);
+
+    transition:.35s ease;
+
+}
+
+.scroll-top.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.scroll-top:hover{
+
+    background:#1DBD73;
+
+    color:#fff;
+
+    transform:translateY(-5px);
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.scroll-top{
+
+    width:55px;
+
+    height:55px;
+
+    right:18px;
+
+    bottom:90px;
+
+    font-size:22px;
+
+}
+
+}
+
+
+/*=========================
+        FAQ SECTION
+=========================*/
+
+.faq-section{
+
+    padding:100px 0;
+    background:#F8FBFF;
+
+}
+
+.faq-heading{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.faq-heading span{
+
+    display:inline-block;
+    color:#1DBD73;
+    font-size:18px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:10px;
+
+}
+
+.faq-heading h2{
+
+    font-size:48px;
+    color:#183B6B;
+    font-weight:700;
+    margin-bottom:15px;
+
+}
+
+.faq-heading p{
+
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+
+}
+
+/*=========================
+        FAQ CARD
+=========================*/
+
+.faq-container{
+
+    max-width:950px;
+    margin:60px auto 0;
+
+}
+
+.faq-item{
+
+    background:#fff;
+    margin-bottom:20px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.faq-item:hover{
+
+    transform:translateY(-4px);
+    box-shadow:0 25px 50px rgba(29,189,115,.18);
+
+}
+
+.faq-question{
+
+    width:100%;
+    padding:24px 30px;
+    border:none;
+    outline:none;
+    background:#fff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:20px;
+    font-weight:600;
+
+    color:#183B6B;
+
+}
+
+.faq-question span{
+
+    width:42px;
+    height:42px;
+
+    background:#1DBD73;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#fff;
+
+    font-size:24px;
+
+    transition:.35s;
+
+}
+
+.faq-item.active .faq-question span{
+
+    background:#183B6B;
+
+}
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .4s ease;
+
+}
+
+.faq-answer p{
+
+    padding:0 30px 30px;
+
+    color:#666;
+
+    line-height:1.9;
+
+    font-size:16px;
+
+}
+
+/*=========================
+        RESPONSIVE
+=========================*/
+
+@media(max-width:992px){
+
+.faq-heading h2{
+
+font-size:38px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.faq-section{
+
+padding:70px 20px;
+
+}
+
+.faq-heading h2{
+
+font-size:30px;
+
+}
+
+.faq-question{
+
+padding:18px;
+
+font-size:17px;
+
+}
+
+.faq-question span{
+
+width:35px;
+height:35px;
+font-size:20px;
+
+}
+
+.faq-answer p{
+
+padding:0 18px 20px;
+
+}
+
+}
