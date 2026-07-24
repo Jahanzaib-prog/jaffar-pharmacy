@@ -24,7 +24,7 @@ form.addEventListener("submit", function(e){
 💬 Message:
 ${message}`;
 
-    const whatsappNumber = "923188808787";
+    const whatsappNumber = "923075321582";
 
     const url =
 `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
